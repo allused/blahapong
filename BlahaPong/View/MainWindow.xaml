@@ -1,0 +1,17 @@
+﻿<Window x:Class="BlahaPong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlahaPong"
+        Title="PingPongMadness" 
+        KeyDown="Window_KeyDown"
+        KeyUp="MainWindow_OnKeyUp"
+        SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+        
+    <Canvas RenderTransformOrigin="0.491,0.523" Name="canv" Height="450" Width="800">
+        <!-- <Image Source="/Resources/images/sprite1.png" Height="200" Width="200"/> -->
+        <Image x:Name="PauseImageTwo" Height="206" Canvas.Left="46" Canvas.Top="104" Width="708" Visibility="Hidden" Source="/Resources/pauseTwo.png"/>
+        <TextBox x:Name="ScoreSeparator" Height="55" Canvas.Left="384" Text=":" TextWrapping="Wrap" Width="29" FontSize="36" HorizontalContentAlignment="Center" IsReadOnly="True" BorderThickness="0" Background="Transparent" Visibility="Hidden" />
+    </Canvas>
+</Window>
